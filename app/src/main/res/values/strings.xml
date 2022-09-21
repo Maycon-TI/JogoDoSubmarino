@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Game</string>
+
+    <string name="easy">Easy</string>
+    <string name="normal">Normal</string>
+    <string name="hard">Hard</string>
+
+    <string name="gastoOxigenio">gasto [x %s]</string>
+    <string name="quantidadeBombas">bombas [%s]</string>
+
+    <string name="totalOxigenio">oxigenio [%s]</string>
+    <string name="posBombs">bomb [Y:%s /X:%s /P:%s]</string>
+    <string name="bombs">bombs [%s/%s]</string>
+
+    <string name="tempo">tempo [%s]</string>
+    <string name="y">Y: [%s]</string>
+    <string name="x">X: [%s]</string>
+    <string name="p">P: [%s]</string>
+
+    <string name="explodiu">A bomba explodiu!</string>
+    <string name="pego">+1 bomb</string>
+
+
+</resources>

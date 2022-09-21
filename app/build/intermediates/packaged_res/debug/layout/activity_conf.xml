@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292828"
+    tools:context=".ConfActivity">
+
+    <TextView
+        android:id="@+id/tv_gasto_de_oxigenio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_dificuldade"
+        app:layout_constraintEnd_toStartOf="@+id/tv_dificuldade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_dificuldade" />
+
+    <TextView
+        android:id="@+id/tv_quantidade_bombas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="TextView"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_gasto_de_oxigenio2"
+        app:layout_constraintEnd_toEndOf="@+id/tv_gasto_de_oxigenio2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_gasto_de_oxigenio2" />
+
+    <Spinner
+        android:id="@+id/s_spinner"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <TextView
+        android:id="@+id/tv_dificuldade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/s_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/s_spinner"
+        app:layout_constraintTop_toTopOf="@+id/s_spinner" />
+
+    <ImageView
+        android:id="@+id/ib_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974"
+        tools:srcCompat="@drawable/conf" />
+</androidx.constraintlayout.widget.ConstraintLayout>

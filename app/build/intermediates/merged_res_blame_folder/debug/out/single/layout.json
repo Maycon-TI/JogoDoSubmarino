@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Maycon\\AndroidStudioProjects\\Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Maycon\\AndroidStudioProjects\\Game\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Maycon\\AndroidStudioProjects\\Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_game.xml",
+        "source": "C:\\Users\\Maycon\\AndroidStudioProjects\\Game\\app\\src\\main\\res\\layout\\activity_game.xml"
+    },
+    {
+        "merged": "C:\\Users\\Maycon\\AndroidStudioProjects\\Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_conf.xml",
+        "source": "C:\\Users\\Maycon\\AndroidStudioProjects\\Game\\app\\src\\main\\res\\layout\\activity_conf.xml"
+    }
+]
