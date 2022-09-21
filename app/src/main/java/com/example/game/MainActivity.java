@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.ibConf.setImageResource(R.drawable.conf);
         binding.ibNewGame.setImageResource(R.drawable.bt_new_game1);
-        prepararBotao();
+        prepararBt();
         loadView();
     }
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         binding.tvQuantidadeBombas.setText(getString(R.string.quantidadeBombas, String.valueOf(game.getBombas())));
     }
 
-    private void prepararBotao(){
+    private void prepararBt(){
         btConf();
         btNewGame();
     }
