@@ -17,7 +17,7 @@ public class GameActivity extends AppCompatActivity {
     Random r = new Random();
     private int p, y, x;
     private boolean bomb = false;
-    private final int tempoMax = 30;
+    private final int tempoMax = 25;
     private int tempo = tempoMax;
     private int bp;
     private int by;
@@ -52,7 +52,7 @@ public class GameActivity extends AppCompatActivity {
         binding.pbQuantidadeOxigenio.setMax(1000);
     }
 
-    private Game game() {
+    private Game getGame() {
         return getIntent().getParcelableExtra(Constantes.GAME.getDescricao());
     }
 
@@ -97,7 +97,7 @@ public class GameActivity extends AppCompatActivity {
 
         binding.pbQuantidadeOxigenio.setProgress(oxigenio);
         String textBomb1 = String.valueOf(bombas);
-        String textBomb2 = String.valueOf(game().getBombas());
+        String textBomb2 = String.valueOf(getGame().getBombas());
         binding.tvBombas.setText(getString(R.string.bombs, textBomb1, textBomb2));
         String pbp = String.valueOf(bp);
         String pby = String.valueOf(by);
@@ -235,9 +235,9 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void voltar(){
-        if (bombas >= game().getBombas() || oxigenio < 0) {
+        if (bombas >= getGame().getBombas() || oxigenio < 0) {
             Intent i = new Intent();
-            i.putExtra(Constantes.GAME.getDescricao(), game());
+            i.putExtra(Constantes.GAME.getDescricao(), getGame());
             setResult(10, i);
             finish();
         }
@@ -247,7 +247,7 @@ public class GameActivity extends AppCompatActivity {
         new Thread(() -> {
             while(true) {
                 runOnUiThread(() -> {
-                    oxigenio = oxigenio - game().getGastoDeOxigenio();
+                    oxigenio = oxigenio - getGame().getGastoDeOxigenio();
                     tempo = tempo - 1;
 
                     if (avanca){
